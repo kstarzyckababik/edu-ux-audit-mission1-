@@ -31,3 +31,29 @@ lub
 ### Priorytet
 
 Średni
+
+---
+
+## Jakość renderowania tekstu
+
+### Obserwacja
+Tekst w grze sprawia wrażenie nieostrego / lekko rozmytego (scena salon -> popiersie -> uzuepełnienie munduru)
+Problem występuje niezależnie od przeglądarki.
+
+### Analiza
+Możliwa przyczyna:
+- skalowanie elementów (CSS transform / zoom),
+- renderowanie w canvas o innej rozdzielczości niż ekran,
+- brak optymalizacji pod wysokie DPI.
+
+### Wpływ na użytkownika
+- obniżona czytelność,
+- zwiększone obciążenie wzroku,
+- potencjalna bariera dla uczniów młodszych klas.
+
+### Rekomendacja
+- weryfikacja renderowania fontów w natywnej rozdzielczości,
+- sprawdzenie skalowania interfejsu przy różnych DPI.
+
+### Priorytet
+Średni
