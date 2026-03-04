@@ -21,8 +21,8 @@ Projekt został wykonany jako symulacja odbioru produktu edukacyjnego przed publ
 
 Testy przeprowadzono w środowisku:
 
-- System: Linux  
-- Przeglądarki: Firefox, Google Chrome  
+- System: Linux, iOS  
+- Przeglądarki: Firefox, Google Chrome, Safari
 - Wersja: przeglądarkowa (desktop)
 
 Zakres analizy obejmował:
@@ -39,7 +39,7 @@ Zakres analizy obejmował:
 
 ## Kluczowe ustalenia
 
-### 1. Problem ładowania gry w przeglądarce Firefox
+### 1. Problem ładowania gry w przeglądarce Firefox i Safari
 Po kliknięciu „Wejdź” gra ładuje się bez końca.  
 Problem nie występuje w przeglądarce Google Chrome.  
 Możliwy błąd kompatybilności przeglądarkowej.
@@ -70,7 +70,7 @@ Nie wszystkie sceny zawierają czytane polecenia.
 
 ## Rekomendacje
 
-1. Zweryfikować problem ładowania w przeglądarce Firefox.  
+1. Zweryfikować problem ładowania w przeglądarce Firefox i Safari.  
 2. Doprecyzować kryteria ukończenia sceny lub oznaczyć elementy jako opcjonalne.  
 3. Sprawdzić jakość renderowania tekstu przy różnych rozdzielczościach.  
 4. Rozważyć rozszerzenie wsparcia audio w kontekście młodszej grupy wiekowej.
