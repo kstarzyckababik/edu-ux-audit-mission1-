@@ -1,90 +1,92 @@
 # Audyt funkcjonalno-techniczny gry edukacyjnej  
 „Wizyta u dziadka - zwiedzamy dworek Marszałka Józefa Piłsudskiego”
+
 [GRA](https://niepodlegla.men.gov.pl/niepodlegla/mission1/)
 
-## Cel projektu
+## 1. Cel opracowania
 
-Celem projektu było przeprowadzenie analizy funkcjonalnej, technicznej oraz heurystycznej gry edukacyjnej przeznaczonej dla uczniów klas 1-3 szkoły podstawowej.
+Celem niniejszego opracowania było przeprowadzenie analizy funkcjonalnej, technicznej oraz heurystycznej gry edukacyjnej przeznaczonej dla uczniów klas I-III szkoły podstawowej.
 
-Audyt obejmował:
-- analizę zgodności funkcjonalnej,
-- ocenę dostępności cyfrowej,
-- analizę UX,
-- identyfikację ryzyk dydaktycznych i technicznych,
-- opracowanie rekomendacji usprawnień.
-
-Projekt został wykonany jako symulacja odbioru produktu edukacyjnego przed publikacją na platformie publicznej.
+Analiza została wykonana jako symulacja odbioru produktu edukacyjnego przed jego publikacją lub wdrożeniem na platformie publicznej.
 
 ---
 
-## Zakres testów
+## 2. Zakres analizy
 
-Testy przeprowadzono w środowisku:
+Analiza obejmowała:
 
-- System: Linux, iOS  
-- Przeglądarki: Firefox, Google Chrome, Safari
-- Wersja: przeglądarkowa (desktop)
-
-Zakres analizy obejmował:
-
-1. User Flow i logikę przechodzenia scen  
-2. Kryteria ukończenia poziomu  
-3. Spójność mechaniki z celami edukacyjnymi  
-4. Dostępność (kontrast, wielkość tekstu, audio)  
-5. Kompatybilność przeglądarek  
-6. Jakość wizualną i czytelność  
-7. Ryzyka projektowe  
+- weryfikację poprawności działania gry w środowisku przeglądarkowym,
+- ocenę zgodności funkcjonalnej mechaniki gry z jej celem edukacyjnym,
+- analizę user flow i kryteriów ukończenia poszczególnych scen,
+- ocenę dostępności cyfrowej (m.in. kontrast, czytelność tekstu, wsparcie audio),
+- identyfikację potencjalnych ryzyk technicznych i dydaktycznych,
+- sformułowanie rekomendacji usprawnień.
 
 ---
 
-## Kluczowe ustalenia
+## 3. Środowisko testowe
 
-### 1. Problem ładowania gry w przeglądarce Firefox i Safari
-Po kliknięciu „Wejdź” gra ładuje się bez końca.  
-Problem nie występuje w przeglądarce Google Chrome.  
-Możliwy błąd kompatybilności przeglądarkowej.
+Testy przeprowadzono w następującej konfiguracji:
 
-### 2. Niespójność kryteriów ukończenia sceny
-Możliwe jest uzyskanie wyniku 100% bez interakcji ze wszystkimi elementami edukacyjnymi.  
-Może to prowadzić do pominięcia części treści.
-
-### 3. Jakość renderowania tekstu
-W niektórych scenach tekst jest lekko nieostry.  
-Może wpływać na komfort czytania i dostępność.
-
-### 4. Audio i dostępność
-Nie wszystkie sceny zawierają czytane polecenia.
+- system operacyjny: Linux, iOS
+- przeglądarki: Mozilla Firefox, Google Chrome, Safari
+- wersja gry: przeglądarkowa (desktop)
 
 ---
 
-## Mocne strony gry
+## 4. Ustalenia z analizy
 
-- Przejrzysty i estetyczny interfejs  
-- Intuicyjna nawigacja  
-- Możliwość zmiany kontrastu  
-- Brak presji czasowej  
-- Dostosowany poziom trudności  
-- Swobodna eksploracja przestrzeni  
+### 4.1. Kompatybilność przeglądarkowa
 
----
+W przeglądarce Mozilla Firefox i Safari zaobserwowano problem polegający na nieskończonym ładowaniu gry po wybraniu opcji „Wejdź”.  
+Problem nie występuje w przeglądarce Google Chrome.
 
-## Rekomendacje
-
-1. Zweryfikować problem ładowania w przeglądarce Firefox i Safari.  
-2. Doprecyzować kryteria ukończenia sceny lub oznaczyć elementy jako opcjonalne.  
-3. Sprawdzić jakość renderowania tekstu przy różnych rozdzielczościach.  
-4. Rozważyć rozszerzenie wsparcia audio w kontekście młodszej grupy wiekowej.
+Zdarzenie może wskazywać na brak pełnej optymalizacji pod kątem kompatybilności przeglądarkowej.
 
 ---
 
-## Kompetencje rozwijane w projekcie
+### 4.2. Kryteria ukończenia sceny
 
-- analiza funkcjonalno-techniczna produktu edukacyjnego  
-- identyfikacja problemów UX i dostępności  
-- dokumentowanie błędów i formułowanie rekomendacji  
-- analiza ryzyk projektowych  
-- myślenie systemowe w kontekście odbioru produktu  
+Zaobserwowano możliwość ukończenia sceny i uzyskania wyniku 100% bez interakcji ze wszystkimi dostępnymi elementami edukacyjnymi (np. przeglądaniem albumu).
+
+Może to prowadzić do:
+
+- pominięcia części treści merytorycznych,
+- niespójności między zakresem materiału a systemem zaliczenia.
 
 ---
 
-Projekt ma charakter analityczny i edukacyjny.
+### 4.3. Czytelność i jakość renderowania tekstu
+
+W wybranych scenach tekst sprawia wrażenie nieostrego, co może wpływać na komfort czytania.
+
+W kontekście użytkowników młodszych klas czytelność tekstu stanowi istotny element dostępności i jakości dydaktycznej.
+
+---
+
+### 4.4. Dostępność
+
+Pozytywnie oceniono:
+
+- możliwość zmiany kontrastu,
+- odpowiednią wielkość tekstu,
+- brak presji czasowej,
+- intuicyjną nawigację.
+
+Wątpliwości budzi brak pełnego wsparcia audio w części scen, co może mieć znaczenie w przypadku uczniów z niższymi kompetencjami czytelniczymi.
+
+---
+
+## 5. Rekomendacje
+
+1. Zweryfikować działanie gry w przeglądarce Mozilla Firefox.  
+2. Doprecyzować kryteria ukończenia sceny lub wyraźnie oznaczyć elementy opcjonalne.  
+3. Zweryfikować jakość renderowania tekstu w różnych konfiguracjach rozdzielczości.  
+4. Rozważyć rozszerzenie wsparcia audio dla wszystkich poleceń i treści kluczowych.  
+
+---
+
+## 6. Charakter opracowania
+
+Opracowanie ma charakter analityczny i demonstracyjny.  
+Celem projektu było zaprezentowanie sposobu prowadzenia analizy funkcjonalno-technicznej produktu edukacyjnego w kontekście odbioru jakościowego.
